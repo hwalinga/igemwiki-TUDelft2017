@@ -1,7 +1,7 @@
 :root {
   #0acd86 #52d8ca #3bcef6 #5999f9 #4f44e7;
   --background-color: #fefefe;
-  --border-color: #4f44e7;
+  --border-color: #a2a2a2;
 /*  #a2a2a2*/
   --border-sec-color: #bbb;
   --border-active-color: #888;
@@ -52,7 +52,6 @@
   width: 100%;
   max-width: 1250px;
   margin: 0 auto;
-  padding: 0 20px;
   box-sizing: border-box;
 }
 
@@ -69,7 +68,6 @@
 @media (min-width: 400px) {
   .container {
     width: 95%;
-    padding: 0;
   }
 }
 
@@ -316,6 +314,10 @@ a:visited {
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.button:visited {
+  color: var(--text-sec-color);
+}
+
 .button,
 button,
 input[type="submit"],
@@ -381,11 +383,6 @@ input[type="button"].button-primary:focus {
   background-color: #1eaedb;
   border-color: #1eaedb;
 }
-
-.button:visited {
-  color: var(--text-sec-color);
-}
-
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -595,9 +592,9 @@ form {
 
 hr {
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 0;
   border-width: 0;
-  border-top: 13px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
 }
 
 

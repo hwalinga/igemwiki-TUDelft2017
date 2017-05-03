@@ -3,6 +3,10 @@
     hr_height = 13,
     hr_margin_bottom = 16,
 
+    // For simple hr.
+    hr_heigth = 0,
+    hr_margin_bottom = 0,
+
     first = "igem",
     secon = "tudelft",
     third = "gmail",
@@ -30,7 +34,8 @@
   $(function () {
     $(window).scroll(function () {
       var scroll = $(window).scrollTop(),
-        top_bar = $('#top-bar');
+        top_bar = $('#top-bar'),
+          intro_height = $('#top-img').outerHeight();
       if (scroll > intro_height) {
         top_bar.addClass('fixed-menu container');
         $('#top-hr').addClass('fixed-top-hr');
@@ -44,9 +49,9 @@
     });
   });
 
-//  $(function () {
-//    alert($('footer').css('padding-top'));
-//  })
+  //  $(function () {
+  //    alert($('footer').css('padding-top'));
+  //  })
 
 }());
 
@@ -59,6 +64,7 @@ function copyToClipboard(element) {
   $temp.val(element).select();
   document.execCommand("copy");
   $temp.remove();
+  alert("You copied: " + element + ".");
 }
 
 function addMenuHoverEffects() {

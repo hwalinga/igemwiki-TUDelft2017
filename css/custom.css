@@ -38,7 +38,6 @@ ul {
 #top-img {
   margin: 0 auto;
   display: block;
-  height: var(--intro-height);
 }
 
 nav ul {
@@ -124,6 +123,13 @@ main.container {
   width: 100%;
 }
 
+ul.text {
+  padding-left: 1px;
+}
+
+div.text {
+  margin-top: 1em;
+}
 
 /* Footer
 **********************************/
@@ -150,6 +156,10 @@ footer {
   bottom: 0px;
   width: 100%;
   height: var(--footer-height);
+/*  padding-top: 1em;*/
+}
+
+#footer {
   padding-top: 1em;
 }
 
